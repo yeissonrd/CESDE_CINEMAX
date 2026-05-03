@@ -1,11 +1,17 @@
 
 /* Encabezado: Ayuda, ingresar y Registrase*/
 nav {
-    display: fixed  ;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  z-index: 100;
+  box-sizing: border-box;
 }
 nav ul {
   list-style: none;
-  padding: 0;
+ padding: 0 20px 0 0; 
   margin: 0;
   text-align: right;  
 }
@@ -21,7 +27,7 @@ nav ul li:first-child {
 
 nav a {
   text-decoration: none;
-  color: red;
+  color: #B80F0F;
 }
 
 .icono-ayuda {
@@ -29,7 +35,7 @@ nav a {
   width: 18px;
   height: 18px;
   background-color: whitesmoke;
-  color: red;
+  color: #B80F0F;
   border-radius: 50%;   
   text-align: center;
   font-size: 12px;
@@ -39,15 +45,16 @@ nav a {
 
 .boton {
   border-radius: 5px;
-  background-color: red;
+  background-color: #B80F0F;
   color: white;
   border: none;
-  padding: 6px 14px;
+  padding: 6px 14px ;
   cursor: pointer;
 }
 
 button:hover {
   box-shadow: 0 0 5px red;
+  color:#FFD700 ;
 }
 
 /* Titulo*/
@@ -63,7 +70,7 @@ button:hover {
 /* Body*/
 
 body {
-    background-color: #696969; 
+    background-color: #1A1A1A; 
 }
 /*Barra de nevegacion*/
 .buscar {
@@ -74,7 +81,7 @@ body {
 
 .boton-buscar {
   background-color: transparent;
-  color: red;
+  color: #B80F0F;
   border: 2px solid red;
   border-radius: 6px;
   padding: 8px 18px;
@@ -91,28 +98,77 @@ input {
   
 }
 input:focus {
-  border-color: red;
+  border-color: #B80F0F;
   outline: none;  
 }
 
 .sede {
-    margin-top: 100px;
+    margin-top: 50px;
+    background-color: #B80F0F;
+    color: white ;
+}
+.estrenos {
+    text-align: center;
+    color: #FFD700;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.imagenes {
+    display: block;
+    text-align: center;
+    color: #FFD700 ;
+    border: solid #B80F0F ;
+    border-radius: 10px;
+    background-color: #B80F0F;
+    padding: 10px;
+}
 
+.app {
+    border: solid;
+    border-radius: 10px;
+    background-color: #B80F0F;
+    text-align: center;
+    color: white;
+    padding: 70px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
 
 /*Footer*/
 .footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  text-align: center;
-  padding: 5px;
   background-color: black;
-  color: red;
+  color: white;
+  padding: 5px 15px;
+  box-sizing: border-box;
 }
-footer ul li {
-    display: inline;
-    list-style: none;
-    
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+.footer ul li {
+  display: inline;
+  margin-right: 30px;
+
+}
+
+footer ul li a {
+    color: #B80F0F;
+    text-decoration: none;
+    margin-right: 30px;
+   
+}  
+.footer p {
+  display: inline;
+  float: right;  
+  margin: 0;
+  font-size: 13px;
+  color: white;
 }
