@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CesdeCINEMAX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="/Styles/Homestyle.css">
+
 </head>
 
 <body>
@@ -17,29 +20,89 @@
             <li><a href="/login.html"><button class="boton">Registrarse</button></a></li>
         </ul>
     </nav>
-    <header>
+    <header class="header" >
 
-        <h1 class="titulo">CESDE <span class="cine">CINE</span>MAX</h1>
+        <h1 ><img src="/Pictures/CESDE Cinemax.jpg" alt=""></h1>
 
     </header>
 
     <main>
-        <section class="buscar">
-            <button class="boton-buscar">Buscar</button>
-            <input type="text" placeholder="ej: Scream 7">
+
+        <section class="barra-sede">
+            <select name="sede" class="sede">
+                <option value="">Medellín</option>
+                <option value="">Bello</option>
+                <option value="">Bogotá</option>
+            </select>
+            <section class="buscar">
+                <button class="boton">Buscar</button>
+                <input type="text" placeholder="ej: Scream 7">
+            </section>
         </section>
-        <select name="sede" class="sede">
-            <option value="">Sede</option>
-            <option value="medellin">Medellín</option>
-            <option value="bello">Bello</option>
-            <option value="bogota">Bogotá</option>
-        </select>
-         <section class="estrenos">Estrenos</section>
-        <section class="imagenes" >
-        <img src="/Pictures/Scream_7.jpg" alt=""> 
+        <section class="container mt-3">
+            <section class="row row-cols-1 row-cols-md-4 g-3">
+
+                <section class=" col">
+                    <article class="card h-100">
+                        <img src="/Pictures/Scream_7.jpg" class="card-img-top" alt="Scream 7">
+                        <div class="card-body">
+                            <h5 class="card-title">Scream 7</h5>
+                            <p class="card-text">Ghostface regresa más despiadado que nunca. Los sobrevivientes de
+                                Woodsboro deberán enfrentarse a una nueva pesadilla donde nadie está a salvo.</p>
+                            <a href="#" class="btn btn-danger">Adquiere tu entrada</a>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="col">
+                    <article class="card h-100">
+                        <img src="/Pictures/mortalcombat.jpg" class="card-img-top" alt="Scream 7">
+                        <div class="card-body">
+                            <h5 class="card-title">Mortal Kombat II</h5>
+                            <p class="card-text">Los guerreros más letales del mundo regresan a una batalla sin cuartel.
+                                El destino de la Tierra depende de quién sobreviva el torneo más brutal de todos los
+                                tiempos.</p>
+                            <a href="#" class="btn btn-danger">Adquiere tu entrada</a>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="col">
+                    <article class="card h-100">
+                        <img src="/Pictures/michaeljackson.jpg" class="card-img-top" alt="Scream 7">
+                        <div class="card-body">
+                            <h5 class="card-title">Michael</h5>
+                            <p class="card-text">La historia nunca contada del rey del pop. Un viaje íntimo por la vida,
+                                la música y los misterios que rodearon a Michael Jackson, el artista más grande de todos
+                                los tiempos.</p>
+                            <a href="#" class="btn btn-danger">Adquiere tu entrada</a>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="col">
+                    <article class="card h-100">
+                        <img src="/Pictures/supermario.jpg" class="card-img-top" alt="Scream 7">
+                        <div class="card-body">
+                            <h5 class="card-title">Super Mario Galaxy </h5>
+                            <p class="card-text"> La Película
+                                Mario emprende su aventura más galáctica. Junto a sus amigos deberá cruzar el universo
+                                para rescatar a la Princesa Peach de las garras del temible Bowser.</p>
+                            <a href="#" class="btn btn-danger">Adquiere tu entrada</a>
+                        </div>
+                    </article>
+                </section>
+
+            </section>
         </section>
 
-        <section class="app">Descarga nuestra app. </section>
+        <section class="app">
+            <h2 class="descargatexto">Descarga nuestra app en:</h2>
+            <ul>
+                <li><a href=""><img src="/Pictures/app-store.png" alt=""></a></li>
+                <li><a href=""><img src="/Pictures/google-play.png" alt=""></a></li>
+            </ul>
+         </section>
 
 
 
@@ -51,7 +114,7 @@
             <li><a href="">¿Quíenes somos?.</a></li>
             <li><a href="">Trabaja con nosotros.</a></li>
             <li><a href="">Contáctanos.</a></li>
-            
+
         </ul>
         <p>Cesde CineMax-2026 by <span class="yeisson"> Yeisson Mora</span></p>
 
