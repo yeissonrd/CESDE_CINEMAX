@@ -58,11 +58,13 @@ button:hover {
 
 /* Titulo*/
 .header img {
-  margin-top: 20px;  
-  display: block;  
-  object-fit: contain;
-  
+  margin-top: 40px;
+  width: 100%;
+  display: block;
+  max-width: 100%;
 }
+  
+
 .cine {
   color: white;
 }
@@ -70,7 +72,8 @@ button:hover {
 /* Body*/
 
 body {
-  background-color: #1a1a1a;
+  background: #291212;
+background: linear-gradient(90deg, rgba(41, 18, 18, 1) 0%, rgba(171, 83, 58, 1) 48%, rgba(82, 29, 21, 1) 100%);
 }
 /*Barra de nevegacion*/
 .buscar {
@@ -88,7 +91,8 @@ body {
   cursor: pointer; } */
 
 input {
-  width: 500px;
+  width: 60%;
+  max-width: 500px;
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 14px;
@@ -144,7 +148,7 @@ input:focus {
   text-align: center;
   color: white;
   padding: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   margin-top: 100px;
  
 }
@@ -160,8 +164,8 @@ input:focus {
 }
 
 .app ul li img {
-  width: 200px;   /* controla el tamaño aquí, en la imagen */
-  height: auto;   /* mantiene las proporciones */
+  width: 200px;   
+  height: auto;   
   cursor: pointer;
 
 }
@@ -206,4 +210,46 @@ footer ul li a {
 }
 .yeisson {
   color: #ffd700;
+}
+
+/* Login page*/
+fieldset{
+  font-size: medium;
+  text-align: center;
+  color:white ;
+  width: 300px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px;
+  border-color: white;
+  border-radius: 10px;
+}
+
+fieldset label {
+  font-size: 25px;    /* letra más grande */
+  display: block;     /* cada label en su propia línea */
+  margin-bottom: 15px; /* espacio entre Usuario y Contraseña */
+}
+
+fieldset input {
+  margin-top: 6px;   
+  width: 100%;
+}
+
+.loginparrafo {
+  margin-top: 40px;
+  font-size: 20px;
+  
+
+}
+.loginparrafo a {
+  text-decoration: none;  
+  
+}
+
+.link-aqui {
+  text-decoration: underline;   
+   text-decoration-color: #ffd700; 
+  color: #ffd700;  
 }
