@@ -193,7 +193,8 @@ input:focus {
 
 .footer ul li {
   display: inline;
-  margin-right: 30px;
+  margin-right: 8px;   /* menos margen en móvil */
+  font-size: 12px;     /* letra más pequeña */
 }
 
 footer ul li a {
@@ -202,41 +203,42 @@ footer ul li a {
   margin-right: 30px;
 }
 .footer p {
-  display: inline;
-  float: right;
-  margin: 0;
-  font-size: 13px;
-  color: white;
+  display: block;      /* el copyright baja a su propia línea */
+  float: none;
+  text-align: center;
+  font-size: 11px;
 }
 .yeisson {
   color: #ffd700;
 }
 
 /* Login page*/
-fieldset{
+fieldset {
   font-size: medium;
   text-align: center;
-  color:white ;
-  width: 300px;
-  margin-top: 100px;
+  color: white;
+  width: 85%;
+  max-width: 400px;
+  margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
-  padding: 100px;
+  padding: 20px;
   border-color: white;
   border-radius: 10px;
+  box-sizing: border-box;
 }
-
 fieldset label {
-  font-size: 25px;    /* letra más grande */
-  display: block;     /* cada label en su propia línea */
-  margin-bottom: 15px; /* espacio entre Usuario y Contraseña */
+  font-size: 25px;    
+  display: block;     
+  margin-bottom: 15px; 
 }
 
 fieldset input {
-  margin-top: 6px;   
+  margin-top: 6px;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;  /* evita que el padding desborde */
 }
-
 .loginparrafo {
   margin-top: 40px;
   font-size: 20px;
